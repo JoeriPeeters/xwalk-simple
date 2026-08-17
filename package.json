@@ -24,6 +24,9 @@
     "url": "https://github.com/adobe/aem-boilerplate/issues"
   },
   "homepage": "https://github.com/adobe/aem-boilerplate#readme",
+  "dependencies": {
+    "qrcode": "1.5.4"
+  },
   "devDependencies": {
     "@babel/eslint-parser": "7.28.6",
     "eslint": "8.57.1",
