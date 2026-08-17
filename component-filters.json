@@ -16,7 +16,8 @@
       "cards",
       "columns",
       "fragment",
-      "qr-code"
+      "qr-code",
+      "breadcrumb"
     ]
   },
   {

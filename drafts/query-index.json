@@ -1,0 +1,36 @@
+{
+  "total": 7,
+  "offset": 0,
+  "limit": 7,
+  "data": [
+    {
+      "path": "/pensioen-bij-mijnpensioen",
+      "title": "Pensioen bij MijnPensioen"
+    },
+    {
+      "path": "/pensioen-bij-mijnpensioen/wat-is-pensioen",
+      "title": "Wat is pensioen?"
+    },
+    {
+      "path": "/pensioen-bij-mijnpensioen/de-pensioenregeling",
+      "title": "De pensioenregeling"
+    },
+    {
+      "path": "/je-situatie-verandert",
+      "title": "Je situatie verandert"
+    },
+    {
+      "path": "/je-situatie-verandert/met-pensioen-gaan",
+      "title": "Met pensioen gaan"
+    },
+    {
+      "path": "/over-mijnpensioen",
+      "title": "Over MijnPensioen"
+    },
+    {
+      "path": "/over-mijnpensioen/dit-zijn-we",
+      "title": "Dit zijn we"
+    }
+  ],
+  "type": "sheet"
+}

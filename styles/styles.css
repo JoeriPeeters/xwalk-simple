@@ -11,15 +11,22 @@
  */
 
 :root {
-  /* colors */
-  --background-color: green;
-  --light-color: #f8f8f8;
-  --dark-color: #505050;
-  --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
+  /* colors — adapted from mijnpensioenensioen.nl brand palette */
+  --background-color: #fff;
+  --light-color: #e7e8f5; /* MijnPensioen grey — nav/footer pill backgrounds */
+  --dark-color: #4d508c; /* MijnPensioen blue-accent — hover states */
+  --text-color: #000458; /* MijnPensioen indigo — body text, headings */
+  --link-color: #4d508c;
+  --link-hover-color: #000458;
+  --accent-color: #f80086; /* MijnPensioen magenta — buttons, active states */
+  --accent-hover-color: #c4006f;
 
   /* fonts */
+
+  /* MijnPensioen's real site uses a licensed font ("Author" by Fontshare/Indian Type
+     Foundry) that we don't have files for. Using a clean system sans-serif
+     stack as a stand-in — swap this for the real webfont if/when licensed
+     font files are available (see fonts.css). */
   --body-font-family: roboto, roboto-fallback, sans-serif;
   --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
 
@@ -110,12 +117,17 @@ h6 {
   font-weight: 600;
   line-height: 1.25;
   scroll-margin: 40px;
+  color: var(--text-color);
 }
 
 h1 { font-size: var(--heading-font-size-xxl); }
 h2 { font-size: var(--heading-font-size-xl); }
 h3 { font-size: var(--heading-font-size-l); }
-h4 { font-size: var(--heading-font-size-m); }
+
+h4 {
+  font-size: var(--heading-font-size-m);
+  color: var(--accent-color);
+}
 h5 { font-size: var(--heading-font-size-s); }
 h6 { font-size: var(--heading-font-size-xs); }
 
@@ -199,8 +211,8 @@ button.button:disabled {
 
 a.button.primary,
 button.button.primary {
-  border-color: var(--text-color);
-  background-color: var(--text-color);
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
   color: var(--background-color);
 }
 
@@ -208,9 +220,9 @@ a.button.primary:hover,
 a.button.primary:focus-visible,
 button.button.primary:hover,
 button.button.primary:focus-visible {
-  border-color: var(--dark-color);
-  background-color: var(--dark-color);
-  color: var(--light-color);
+  border-color: var(--accent-hover-color);
+  background-color: var(--accent-hover-color);
+  color: var(--background-color);
 }
 
 a.button.primary[aria-disabled="true"],
