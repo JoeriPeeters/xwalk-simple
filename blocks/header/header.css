@@ -253,7 +253,7 @@ header nav .nav-sections ul > li > ul > li {
 
   header nav .nav-sections ul {
     display: flex;
-    gap: 0;
+    gap: 8px;
     margin: 0;
   }
 
@@ -263,8 +263,10 @@ header nav .nav-sections ul > li > ul > li {
     border-radius: 15px 15px 5px 5px;
   }
 
-  header nav .nav-sections .default-content-wrapper > ul > li > a {
+  header nav .nav-sections .default-content-wrapper > ul > li > a,
+  header nav .nav-sections .default-content-wrapper > ul > li > p {
     display: inline-block;
+    margin: 0;
     padding: 12px 20px;
   }
 
@@ -330,7 +332,8 @@ header nav .nav-sections ul > li > ul > li {
     color: var(--background-color);
   }
 
-  header nav .nav-sections .default-content-wrapper > ul > li:hover > a {
+  header nav .nav-sections .default-content-wrapper > ul > li:hover > a,
+  header nav .nav-sections .default-content-wrapper > ul > li:hover > p {
     text-decoration: none;
     color: inherit;
   }
